@@ -40,15 +40,9 @@ export default function App() {
   };
 
   return (
-    <ImageBackground style={styles.container}>
+    <ImageBackground style={styles.container} source={require('./assets/calculadora.png')}>
       <View style={styles.calculadora}>
         <View style={styles.header}>
-          {/* Imagem da calculadora no canto superior esquerdo */}
-          <Image 
-            style={styles.imagem}
-            source={require('./assets/calculadora.png')}
-            reseizeMode = 'center'
-          />
           <Text style={styles.titulo}>Calculadora de Aumento</Text>
         </View>
         
