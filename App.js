@@ -40,9 +40,11 @@ export default function App() {
   };
 
   return (
-    <ImageBackground style={styles.container} source={require('./assets/calculadora.png')}>
+    <ImageBackground style={styles.container}>
+
       <View style={styles.calculadora}>
         <View style={styles.header}>
+          <Image source={require('./assets/calculadora.png')} style={{width:100, height:100}}/>
           <Text style={styles.titulo}>Calculadora de Aumento</Text>
         </View>
         
@@ -113,7 +115,6 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     padding: 20,
-    backgroundColor: '#222',
     alignItems: 'center',
     
   },
