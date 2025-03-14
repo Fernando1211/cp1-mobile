@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { View, Text, TextInput, TouchableOpacity, StyleSheet, Alert, Image, ImageBackground } from 'react-native';
+import { Alert, Image, ImageBackground, StyleSheet, Text, TextInput, TouchableOpacity, View } from 'react-native';
 
 export default function App() {
   const [nome, setNome] = useState('');
@@ -44,10 +44,10 @@ export default function App() {
 
       <View style={styles.calculadora}>
         <View style={styles.header}>
-          <Image source={require('./assets/calculadora.png')} style={{width:100, height:100}}/>
+          <Image source={require('./assets/calculadora.png')} style={{ width: 100, height: 100 }} />
           <Text style={styles.titulo}>Calculadora de Aumento</Text>
         </View>
-        
+
         <View style={styles.display}>
           {resultado ? (
             <View style={styles.resultadoDisplay}>
@@ -93,20 +93,20 @@ export default function App() {
             <TouchableOpacity style={styles.botao} onPress={calcular}>
               <Text style={styles.botaoTexto}>Calcular</Text>
             </TouchableOpacity>
-            
+
             <TouchableOpacity style={[styles.botao, styles.botaoLimpar]} onPress={limpar}>
               <Text style={styles.botaoTexto}>Limpar</Text>
             </TouchableOpacity>
           </View>
-          
+
         </View>
-        
+
       </View>
-      
+
     </ImageBackground>
-    
+
   );
-  
+
 }
 
 const styles = StyleSheet.create({
@@ -116,7 +116,7 @@ const styles = StyleSheet.create({
     flex: 1,
     padding: 20,
     alignItems: 'center',
-    
+    backgroundColor: 'black'
   },
   calculadora: {
     width: '100%',
@@ -215,8 +215,8 @@ const styles = StyleSheet.create({
     fontWeight: 'bold',
     fontSize: 16,
   },
-  imagem:{
-    width:10,
+  imagem: {
+    width: 10,
     height: 100
   }
 
